@@ -84,6 +84,7 @@ public class Analyze{
                 writer.write(entry.getKey() + " - " + entry.getValue()+"\n");
                 count++;
             }
+            writer.close();
         }catch(IOException e){
             System.out.println("Errore nel salvataggio dei risultati nel file txt");
         }
